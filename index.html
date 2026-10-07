@@ -1,163 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Auto Code</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artisan Pizza Recipe</title>
     <style>
-      :root {
-        --bg: #0f172a;
-        --bg-soft: #111827;
-        --panel: rgba(15, 23, 42, 0.8);
-        --line: rgba(148, 163, 184, 0.2);
-        --text: #e2e8f0;
-        --muted: #94a3b8;
-        --accent: #22c55e;
-        --accent-2: #38bdf8;
-      }
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 30px;
+            color: #000000;
+            line-height: 1.4;
+        }
 
-      * { box-sizing: border-box; }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 25px;
+        }
 
-      body {
-        margin: 0;
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-        font-family: Arial, Helvetica, sans-serif;
-        color: var(--text);
-        background:
-          radial-gradient(circle at top, rgba(56, 189, 248, 0.2), transparent 30%),
-          radial-gradient(circle at bottom right, rgba(34, 197, 94, 0.2), transparent 25%),
-          linear-gradient(135deg, var(--bg), var(--bg-soft));
-      }
+        h2 {
+            font-size: 32px;
+            margin-top: 35px;
+            margin-bottom: 25px;
+        }
 
-      .container {
-        width: min(900px, 90vw);
-        background: var(--panel);
-        border: 1px solid var(--line);
-        border-radius: 24px;
-        padding: 40px 32px;
-        box-shadow: 0 20px 60px rgba(2, 6, 23, 0.45);
-        backdrop-filter: blur(12px);
-      }
+        p {
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
 
-      .badge {
-        display: inline-block;
-        padding: 8px 14px;
-        border-radius: 999px;
-        font-size: 12px;
-        font-weight: 700;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        color: #dcfce7;
-        background: rgba(34, 197, 94, 0.14);
-        border: 1px solid rgba(34, 197, 94, 0.5);
-      }
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 35px 0;
+        }
 
-      h1 {
-        margin: 20px 0 12px;
-        font-size: clamp(2.5rem, 4vw, 4rem);
-        line-height: 1.05;
-      }
+        /* Color classes */
+        .category {
+            color: #d9534f; /* Red/Pinkish */
+        }
 
-      p {
-        margin: 0;
-        color: var(--muted);
-        font-size: 1.1rem;
-        line-height: 1.7;
-        max-width: 62ch;
-      }
+        .crispy {
+            color: #5cb85c; /* Green */
+        }
 
-      .actions {
-        margin-top: 26px;
-        display: flex;
-        gap: 14px;
-        flex-wrap: wrap;
-      }
+        .light-airy {
+            color: #5bc0de; /* Light Blue */
+        }
 
-      button {
-        border: none;
-        border-radius: 12px;
-        padding: 14px 22px;
-        font-size: 1rem;
-        font-weight: 700;
-        cursor: pointer;
-        transition: transform 0.2s ease, opacity 0.2s ease;
-      }
+        .prep-time {
+            color: #f0ad4e; /* Light Orange */
+        }
 
-      button:hover {
-        transform: translateY(-1px);
-      }
+        .bake-time {
+            color: #d9534f; /* Light Red */
+        }
 
-      .primary {
-        color: #052e16;
-        background: linear-gradient(135deg, var(--accent), #4ade80);
-      }
+        .difficulty {
+            color: #8e44ad; /* Purple */
+        }
 
-      .secondary {
-        color: var(--text);
-        background: rgba(148, 163, 184, 0.08);
-        border: 1px solid var(--line);
-      }
-
-      .code-box {
-        margin-top: 28px;
-        padding: 20px 18px;
-        background: rgba(15, 23, 42, 0.9);
-        border: 1px solid var(--line);
-        border-radius: 16px;
-      }
-
-      pre {
-        margin: 0;
-        overflow: auto;
-        color: #bae6fd;
-        font-size: 0.95rem;
-        line-height: 1.7;
-      }
-
-      .status {
-        margin-top: 18px;
-        color: #bbf7d0;
-        font-size: 0.95rem;
-      }
+        .status {
+            color: #20b2aa; /* Teal/Cyan */
+        }
     </style>
-  </head>
-  <body>
-    <main class="container">
-      <div class="badge">Auto Code</div>
-      <h1>Build faster. Ship smarter.</h1>
-      <p>
-        Turn ideas into clean, production-ready front-end experiences with a modern,
-        lightweight workflow designed for speed and clarity.
-      </p>
+</head>
+<body>
 
-      <div class="actions">
-        <button class="primary" type="button">Generate Layout</button>
-        <button class="secondary" type="button">Preview Output</button>
-      </div>
+    <!-- Section 1: Article Header & Intro -->
+    <h1>The Secret to Authentic Artisan Pizza</h1>
 
-      <div class="code-box">
-        <pre><code>const app = {
-  name: "Auto Code",
-  status: "ready",
-  features: ["responsive", "clean UI", "fast output"]
-};</code></pre>
-      </div>
+    <p><strong>Published:</strong> October 2026</p>
+    <p><strong>Category:</strong> <span class="category">Culinary Arts</span></p>
+    <p><strong>Author:</strong> Chef Marco Rossi</p>
 
-      <div class="status" id="status">System ready for generation.</div>
-    </main>
+    <br>
 
-    <script>
-      const primaryButton = document.querySelector('.primary');
-      const status = document.getElementById('status');
+    <p>
+        Making restaurant-quality pizza at home requires <em><strong>high heat</strong></em> and patience. 
+        The most common mistake is <u>rushing the dough fermentation process</u>. 
+        A slow 24-hour cold ferment allows flavor compounds to develop fully, 
+        resulting in a crust that is both <span class="crispy">crispy on the outside</span> 
+        and <span class="light-airy">light and airy on the inside</span>. 
+        Never use a rolling pin—always stretch your dough by hand to preserve crucial air pockets!
+    </p>
 
-      primaryButton.addEventListener('click', () => {
-        status.textContent = 'Generating interface...';
-        setTimeout(() => {
-          status.textContent = 'Interface generated successfully.';
-        }, 700);
-      });
-    </script>
-  </body>
+    <hr>
+
+    <!-- Section 2: Recipe Details -->
+    <h2>Classic Margherita Pizza Recipe</h2>
+
+    <p><strong>Prep Time:</strong> <span class="prep-time">20 mins</span></p>
+    <p><strong>Bake Time:</strong> <span class="bake-time">8 mins at 500°F</span></p>
+    <p><strong>Difficulty:</strong> <em class="difficulty"><u>Intermediate</u></em></p>
+
+    <br>
+
+    <p>
+        <strong>Key Ingredients:</strong> <em>00 Flour</em>, <em>San Marzano tomatoes</em>, 
+        fresh mozzarella, and <u>fresh basil leaves</u>.
+    </p>
+    <p>
+        <strong>Chef's Tip:</strong> <em>Always add basil <strong>after</strong> baking to prevent burning.</em>
+    </p>
+
+    <br>
+
+    <p><strong>Status:</strong> <span class="status">Tested & Verified</span></p>
+
+</body>
 </html>
