@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+</head>
+<body>
+    <style>
+        table {
+            width: 80%;
+            height: auto;
+        }
+        th, 
+        td,
+        th {
+            border: 1px solid black;
+        }
+        thead{
+            background-color: rgb(8, 0, 24); 
+            color: #ebebf0;    
+            font-size: large;
+        }
+        tfoot{
+            background-color: #0b83899d;
+            color: white;   
+            font-size: large;
+        }
+    </style>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col" id="header-id">ID</th>
+                <th scope="col" id="header-name"> Name</th>
+                <th scope="col" id="header-age">Age</th>
+                <th scope="col" id="header-city">City</th>
+                <th scope="col" id="header-country">Country</th>
+                <th scope="col" id="header-job">Job</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td headers="header-id">1</td>
+                <td headers="header-name">Kwon</td>
+                <td headers="header-age">17</td>
+                <td headers="header-city">ARK</td>
+                <td headers="header-country">Cambodia</td>
+                <td headers="header-job">Engineer</td>
+            </tr>
+            <tr>
+                <td headers="header-id">2</td>
+                <td headers="header-name">Dvon</td>
+                <td headers="header-age">18</td>
+                <td headers="header-city">PP</td>
+                <td headers="header-country">Cambodia</td>
+                <td headers="header-job">Designer</td>
+            </tr>
+            <tr>
+                <td headers="header-id">3</td>
+                <td headers="header-name">Rith</td>
+                <td headers="header-age">19</td>
+                <td headers="header-city">PP</td>
+                <td headers="header-country">Cambodia</td>
+                <td headers="header-job">Developer</td>
+            </tr>
+            <tr>
+                <td headers="header-id">4</td>
+                <td headers="header-name">Roth</td>
+                <td headers="header-age">19</td>
+                <td headers="header-city">PP</td>
+                <td headers="header-country">Cambodia</td>
+                <td headers="header-job">Developer</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="col" id="footer-id">ID</th>
+            <th scope="col" id="footer-name"> Name</th>
+            <th scope="col" id="footer-age">Age</th>
+            <th scope="col" id="footer-city">City</th>
+            <th scope="col" id="footer-country">Country</th>
+        </tfoot>
+    </table>
+</body>
+</html>
