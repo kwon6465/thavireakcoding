@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+    }
+    header{
+        background-color: rgb(3, 3, 53);
+        color: white; 
+        text-align: center;
+        padding: 20px;
+    }
+    nav{
+        padding: 10px;
+        border: 1px solid black;
+        background-color: azure;
+    }
+    nav a{
+        margin-right: none;
+        text-decoration: none;
+    }
+    main{
+        display: flex;
+    }
+    aside{
+        width: 200px;
+        padding: 10px;
+        background-color: rgb(161,189,240);
+
+    }
+    section{
+        padding: 20px;
+    }
+    footer{
+        background-color: rgb(3, 3, 53);
+        color: white; 
+        text-align: center;
+        padding: 20px;
+    }
+    figure{
+        text-align: center;
+    }
+    img, video{
+        max-width: 100%;
+        height: auto;
+        width: 50%;
+    }
+    video{
+        display: block;
+        margin: 0 auto;
+    }
+    audio{
+        display: block;
+        margin: 0 auto;
+    }
+
+
+</style>
+<body>
+    <header>
+        <h1>My Project</h1>
+    </header>   
+    <nav>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+    </nav> 
+<main>
+    <aside>
+        <ul>
+            <li><a href="#image">Image</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#sound">Sound</a></li>
+        </ul>
+    </aside>
+    <section>
+        <h2>My Project</h2>
+        <article id="image">
+            <h3>Image</h3>
+            <p>This is a description of the image.</p>
+            <figure>
+                <img src="download.webp" alt="Description of the image" width="400">
+                <img src="https://www.bing.com/th/id/OGC.4d5c667ef575a390211f2ab1a958cb46?r=0&o=7&pid=1.7&rm=3&rurl=https%3a%2f%2fmedia.tenor.com%2fY0goYxQv6FkAAAAC%2fgoku-dance.gif&ehk=UYE4aIyBRgQhIZO8B%2bt3%2b8rvy15ifxgVbVBXcjxUQt8%3d" alt="File gif giving animations">
+                <img src="https://www.bing.com/th/id/OGC.890709917228b73394253f25fea20dbc?r=0&o=7&pid=1.7&rm=3&rurl=https%3a%2f%2fi.kym-cdn.com%2fphotos%2fimages%2foriginal%2f002%2f714%2f359%2ffa8.gif&ehk=3Uzc20B%2b%2fTl4%2bcPQxI7ODR8GIx5bPg4LAsfxQCiUB8k%3d" alt="Description of the second image" alt="File gif giving animation">
+                <figcaption>Image support</figcaption>
+            <!-- </figure>
+                <video src="_Life_ - A Silent, Smart & Simple Short Film!.mp4" controls>
+                    Your browser does not support the video tag.
+                </video> -->
+        </article>
+        <article id="video">
+            <h3>Video</h3>
+            <p>This is a description of the video.</p>
+                <video src="MCSEY_សុំម៉ាសុខ_Feat_Longbunn_,_2MDIE_&_Stonzz_WYFL_RIDDIM.mp4" controls>
+                <figcaption>Video support</figcaption>
+            </video>
+        </article>
+        <article id="sound">
+            <h3>Sound</h3>
+            <p>This is a description of the sound.</p>
+            <figure>
+                <audio controls>
+                    <source src="764e9ce2-4d67-496f-80b6-5a5944871d76.mp4" type="audio/mpeg">
+                </audio>
+                <audio controls>
+                    <source src="PRANK PH x See You Again 😂😂.mp4" type="audio/ogg">
+                    Your browser does not support the audio tag.
+                </audio>
+                <audio controls>
+                   <source src="MCSEY_សមសខ_Feat_Longbunn_,_2MDIE_Stonzz_WYFL_RIDDIM.mp3" type="audio/mpeg">
+                </audio>
+            </figure>
+        </article>
+    </section>
+    </main>
+    <footer>
+        <h2>Contact me</h2>
+    </footer>    
+</main>
+</body>
+</html>
